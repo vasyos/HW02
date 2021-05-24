@@ -1,0 +1,7 @@
+---
+#
+- name: ip
+  hosts: group3
+  become: yes
+  roles:
+          - ip_rules
