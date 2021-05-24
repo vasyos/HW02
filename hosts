@@ -1,0 +1,12 @@
+[group1]
+instance-1 ansible_host=34.118.42.36
+
+[group2]
+instance-2 ansible_host=34.118.6.227
+
+[group3]
+instance-3 ansible_host=34.118.97.240
+
+[iaas:children]
+group1
+group2

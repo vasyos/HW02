@@ -1,0 +1,10 @@
+---
+# task file for passwd rule
+  - name: no username login in password
+    community.general.pamd:
+          name: common-password
+          type: password
+          control: requisite
+          module_path: pam_pwquality.so
+          module_arguments:  'reject_username enforce_for_roote'
+          state: args_present

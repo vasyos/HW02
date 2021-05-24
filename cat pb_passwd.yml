@@ -1,0 +1,6 @@
+---
+- name: password
+  hosts: all
+  become: yes
+  roles:
+          - passwd
