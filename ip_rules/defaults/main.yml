@@ -1,0 +1,15 @@
+---
+# defaults file for tcp wrappers rules
+
+tcpwrappers_allow:
+        - daemon: 'sshd'
+          clients:
+            - '81.233.10.139'
+
+
+tcpwrappers_allow_all_connections: false
+tcpwrappers_deny:
+        - daemon: 'sshd'
+          clients:
+                  - 'ALL'
+tcpwrappers_deny_all_connections: true
